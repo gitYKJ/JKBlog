@@ -1,0 +1,21 @@
+spring:
+  profiles:
+    active: @activatedProperties@
+server:
+  port: 8083
+#  servlet：
+#    context-path: /
+#    session:
+#      timeout: 10
+
+#spring.http.encoding.force=true
+#spring.http.encoding.charset=UTF-8
+#spring.http.encoding.enabled=true
+#server.tomcat.uri-encoding=UTF-8
+# 多数据源配置
+#    database2:
+#      driver-class-name: com.mysql.jdbc.Driver
+#      url: jdbc:mysql://127.0.0.1:3306/activiti?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true
+#      username: root
+#      password: 125800
+

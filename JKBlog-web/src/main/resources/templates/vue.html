@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>01.html</h1>
+<div id="app" :a="msg">
+
+</div>
+</body>
+<script src="./vue.js"></script>
+<script src="./axios.min.js"></script>
+<script>
+    // 自定义全局组件和局部组件:封装/hmtl/css/js
+    // 路由：根据url不同标识展示不同的内容=》组件渲染    Vue.compement('mulit-button',{
+        template: '<div>自定义组件来代替重复标签和数据</div>'
+
+    })
+    new Vue({
+       el: #app,
+        data: {
+            msg: 'abc'
+        },
+        compements: {
+           'mulit-button2': {
+               template: '<div>以newVue父组件和和全局组件并列{{a}}</div>' +
+                   '<mulit-button></mulit-button>',
+               data() {
+                   return{
+
+                   }
+               },
+               props: ['a']
+           }
+        },
+        methods: {
+
+        }
+
+    })
+
+    Window.onhashchange=function () {
+        var hash=location.hash
+        console.log(hash)
+    }
+</script>
+
+</html>

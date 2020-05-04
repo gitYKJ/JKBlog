@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="post_detail">
+    <div class="post">
+        <div class="postTitle">
+            
+<a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/lonelyxmas/p/12549423.html">mysql��������ԭ���Ż�</a>
+
+        </div>
+	
+        <div class="postText">
+            
+<div id="cnblogs_post_body" class="blogpost-body ">
+    ԭ��:<a href="https://www.cnblogs.com/8lala/p/12501169.html" class="" id="">mysql��������ԭ���Ż�</a><p>
+    </p><h1><span style="color: #ff0000;">�������ҷ���</span></h1>
+<h3><strong>1��˳����ң�linear search ��</strong></h3>
+<p>��1.&nbsp;������Ĳ�ѯ�㷨��Ȼ��˳����ң�linear search����Ҳ���ǶԱ�ÿ��Ԫ�صķ��������������㷨���������ܴ�ʱЧ���Ǽ��͵ġ�</p>
+<p>��2.&nbsp;<strong>���ݽṹ��</strong>������������</p>
+<p>��3.&nbsp;<strong>���Ӷȣ�</strong>O(n)</p>
+<h3><strong>2�����ֲ���</strong></h3>
+<p>��1.&nbsp;��������м�Ԫ�ؿ�ʼ������м�Ԫ��������Ҫ���ҵ�Ԫ�أ������ع��̽�����<br>��2.&nbsp;���ĳһ�ض�Ԫ�ش��ڻ���С���м�Ԫ�أ�����������ڻ�С���м�Ԫ�ص���һ���в��ң����Ҹ���ʼһ�����м�Ԫ�ؿ�ʼ�Ƚϡ�<br>��3.&nbsp;�����ĳһ��������Ϊ�գ�������Ҳ�����</p>
+<p>��4.&nbsp;<strong>���ݽṹ��</strong>��������</p>
+<p>��5.<strong>&nbsp;���Ӷȣ�</strong>O(logn)</p>
+<h3><strong>3����������������</strong></h3>
+<p><strong>��1���������������ص��ǣ�</strong></p>
+<p>��1. ���������������գ��������������н���ֵ��С�����ĸ�����ֵ��</p>
+<p>��2. ���������������գ��������������н���ֵ���������ĸ�����ֵ��</p>
+<p>��3. ������������Ҳ�ֱ�Ϊ������������</p>
+<p><strong>��2��������ԭ��</strong></p>
+<p>������b�ǿ�����������ʧ�ܣ�����<br>������x����b�ĸ��ڵ��������ֵ֮������ҳɹ�������<br>������xС��b�ĸ��ڵ��������ֵ֮��������������������<br>����������������</p>
+<p>������<strong>���ݽṹ��</strong>����������</p>
+<p>������<strong>ʱ�临�Ӷȣ�</strong>&nbsp;O(log2N)</p>
+<h3><strong>4����ϣɢ�з�(��ϣ��)</strong></h3>
+<p>��1.&nbsp;��ԭ�������ȸ���keyֵ�͹�ϣ��������һ����ϣ��ɢ�б���ȼ�ĸ��ݼ�ֵ��ͨ��ɢ�к�������λ����Ԫ��λ�á�</p>
+<p>��2. ���ݽṹ����ϣ��</p>
+<p>��3.&nbsp;ʱ�临�Ӷȣ�������O(1)��ȡ���ڲ�����ͻ�Ķ��١�</p>
+<h1><span style="color: #ff0000;">�������ݽṹ</span></h1>
+<h3><strong>1�������������ⲿ�����</strong></h3>
+<p>��1.&nbsp;�ڼ����ϵͳ��һ������������͵Ĵ洢����������棨RAM�����ⲿ�洢������Ӳ�̡�CD��SSD�ȣ���</p>
+<p>��2. ����������㷨�ʹ洢�ṹʱ�����Ǳ���Ҫ���ǵ����������͵Ĵ洢�ص㡣</p>
+<p>��3. ����Ķ�ȡ�ٶȿ죬��������棬�ⲿ���̵����ݶ�ȡ����Ҫ���������ü�������������������֮��Ĳ��������ϸ���ܡ�</p>
+<p>��4. ���潲�����в�ѯ�㷨���Ǽ������ݴ洢�ڼ���������еģ����������һ��Ƚ�С��ʵ�����ݿ������ݶ��Ǵ洢���ⲿ�洢���ġ�</p>
+<h3><strong>2�����������������</strong></h3>
+<p>��1.&nbsp;һ����˵����������Ҳ�ܴ󣬲�����ȫ���洢���ڴ��У�������������������ļ�����ʽ�洢�Ĵ����ϡ�</p>
+<p>��2.&nbsp;�����Ļ����������ҹ����о�Ҫ��������I/O���ģ�������ڴ��ȡ��I/O��ȡ������Ҫ�߼�����������</p>
+<p>��3.&nbsp;��������һ�����ݽṹ��Ϊ��������������Ҫ��ָ������ڲ��ҹ����д���I/O���������Ľ������Ӷȡ�</p>
+<p>��4.&nbsp;���仰˵�������Ľṹ��֯Ҫ�������ٲ��ҹ����д���I/O�Ĵ�ȡ������</p>
+<h3><strong>3�������ȡԭ��</strong></h3>
+<p>��<strong>ע��</strong>���ﱾ����ȴ�����𣬳����һ��ʮ�ּ򵥵Ĵ�ȡģ����˵��RAM�Ĺ���ԭ��</p>
+<p>��1.&nbsp;�ӳ���Ƕȿ���������һϵ�еĴ洢��Ԫ��ɵľ���ÿ���洢��Ԫ�洢�̶���С�����ݡ�</p>
+<p>��2.&nbsp;ÿ���洢��Ԫ��Ψһ�ĵ�ַ���ִ�����ı�ַ����Ƚϸ��ӣ����ｫ��򻯳�һ����ά��ַ��</p>
+<p>��3.&nbsp;ͨ��һ���е�ַ��һ���е�ַ����Ψһ��λ��һ���洢��Ԫ��</p>
+<p>��<strong>��ͼչʾ��һ��4 x 4������ģ�ͣ�</strong></p>
+<p><img src="https://img2018.cnblogs.com/blog/1080958/201902/1080958-20190222135654964-1791560940.png" alt="" width="349" height="207"></p>
+<p><strong>����Ĵ�ȡ�������£�</strong><br>��1����ϵͳ��Ҫ��ȡ����ʱ���򽫵�ַ�źŷŵ���ַ�����ϴ������棬���������ַ�źź�<br>����&nbsp; �����źŲ���λ��ָ���洢��Ԫ��Ȼ�󽫴˴洢��Ԫ���ݷŵ����������ϣ�������������ȡ��</p>
+<p>��2��д����Ĺ������ƣ�ϵͳ��Ҫд�뵥Ԫ��ַ�����ݷֱ���ڵ�ַ���ߺ����������ϣ������ȡ�������ߵ����ݣ�����Ӧ��д������</p>
+<p>��3��������Կ����������ȡ��ʱ������ȡ���������Թ�ϵ����Ϊ�����ڻ�е���������δ�ȡ�����ݵġ����롱�����ʱ�����κ�Ӱ��</p>
+<p>��4�����磬��ȡA0��ȡA1����ȡA0��ȡD3��ʱ��������һ���ġ�</p>
+<h3><strong>4�����̴�ȡԭ��</strong></h3>
+<p>��1.&nbsp;����һ�����ļ���ʽ�洢�ڴ����ϣ�����������Ҫ����I/O������</p>
+<p>��2.&nbsp;�����治ͬ������I/O���ڻ�е�˶��ķѣ���˴���I/O��ʱ�������Ǿ޴�ġ�</p>
+<p>��3.&nbsp;���̶�ȡ���ݿ����ǻ�е�˶�������Ҫ�Ӵ��̶�ȡ����ʱ��ϵͳ�Ὣ�����߼���ַ�������̡�</p>
+<p>��4.&nbsp;���̵Ŀ��Ƶ�·����Ѱַ�߼����߼���ַ����������ַ����ȷ��Ҫ�����������ĸ��ŵ����ĸ�������</p>
+<p>��5.&nbsp;Ϊ�˶�ȡ������������ݣ���Ҫ����ͷ�ŵ���������Ϸ���Ϊ��ʵ����һ�㣬��ͷ��Ҫ�ƶ���׼��Ӧ�ŵ���������̽���Ѱ����</p>
+<p>��6.&nbsp;���ķ�ʱ�����Ѱ��ʱ�䣬Ȼ�������ת��Ŀ��������ת����ͷ�£�������̺ķѵ�ʱ�������תʱ�䣬�����ǶԶ�ȡ���ݵĴ��䡣</p>
+<p>��7.&nbsp;����ÿ�ζ�ȡ���ݻ��ѵ�ʱ����Է�Ϊ<strong>&nbsp;Ѱ��ʱ�䡢��ת�ӳ١�����ʱ��&nbsp;</strong>�������֡�</p>
+<p>����1��Ѱ��ʱ���Ǵű��ƶ���ָ���ŵ�����Ҫ��ʱ�䣬��������һ����5ms���¡�<br>����2����ת�ӳپ������Ǿ�����˵�Ĵ���ת�٣�����һ������7200ת����ʾÿ������ת7200�Σ�Ҳ����˵1������ת120�Σ���ת�ӳپ���1/120/2 = 4.17ms��<br>����3������ʱ��ָ���ǴӴ��̶���������д����̵�ʱ�䣬һ������㼸���룬�����ǰ����ʱ����Ժ��Բ��ơ�</p>
+<p><strong>��8. I/O�����޴�����</strong></p>
+<p>����1����ô����һ�δ��̵�ʱ�䣬��һ�δ���IO��ʱ��Լ����5+4.17 = 9ms����<br>����2����������ͦ����ģ���Ҫ֪��һ̨500 -MIPS�Ļ���ÿ�����ִ��5����ָ��<br>����3����Ϊָ���������ǵ�����ʣ����仰˵ִ��һ��IO��ʱ�����ִ��40����ָ��<br>����4�����ݿ⶯��ʮ���������ǧ�����ݣ�ÿ��9�����ʱ�䣬��Ȼ�Ǹ����ѡ�</p>
+<h3><strong>5������Ԥ��</strong></h3>
+<p>�����Ϊ�����Ч�ʣ�Ҫ�������ٴ���I/O��Ϊ�˴ﵽ���Ŀ�ģ��������������ϸ����ȡ������ÿ�ζ���Ԥ����</p>
+<p>����ʹֻ��Ҫһ���ֽڣ�����Ҳ������λ�ÿ�ʼ��˳������ȡһ�����ȵ����ݷ����ڴ档</p>
+<p>�������������������Ǽ������ѧ�������ľֲ���ԭ����һ�����ݱ��õ�ʱ���丽��������Ҳͨ�������ϱ�ʹ�á�</p>
+<p>��Ԥ���ĳ���һ��Ϊҳ��page������������</p>
+<p>��ҳ�Ǽ��������洢�����߼��飬Ӳ��������ϵͳ����������ʹ��̴洢���ָ�Ϊ�����Ĵ�С��ȵĿ�</p>
+<p>��ÿ���洢���Ϊһҳ����������ϵͳ�У�ҳ�ô�Сͨ��Ϊ4k��������ʹ�����ҳΪ��λ�������ݡ�</p>
+<p>��������Ҫ��ȡ�����ݲ���������ʱ���ᴥ��һ��ȱҳ�쳣����ʱϵͳ������̷��������ź�</p>
+<p>�����̻��ҵ����ݵ���ʼλ�ò����������ȡһҳ��ҳ�����ڴ��У�Ȼ���쳣���أ�����������С�</p>
+<h3><strong>6��B-Tree/B+Tree�洢�ṹ</strong></h3>
+<p>��1.&nbsp;���������ڿ��Է���Ϊ�����ݿ���������B-/+Tree�洢�ṹ�ˡ�</p>
+<p>��2.&nbsp;����˵�����ݿ������Ǵ洢�����̵Ķ�������һ����ʹ�ô���I/O���������������ṹ�����ӡ�</p>
+<p>��3.&nbsp;�ȴ�B-Tree����������B-Tree�Ķ��壬��֪����һ�������Ҫ����h-1���ڵ㣨���ڵ㳣פ�ڴ棩��</p>
+<p>��4.&nbsp;���ݿ�ϵͳ����������������˴���Ԥ��ԭ����һ���ڵ�Ĵ�С��Ϊ����һ��ҳ������ÿ���ڵ�ֻ��Ҫһ��I/O�Ϳ�����ȫ���롣</p>
+<p>��5.&nbsp;Ϊ�˴ﵽ���Ŀ�ģ���ʵ��ʵ��B-Tree����Ҫʹ�����¼��ɣ�</p>
+<p>����1��&nbsp;ÿ���½��ڵ�ʱ��ֱ������һ��ҳ�Ŀռ䣬�����ͱ�֤һ���ڵ�������Ҳ�洢��һ��ҳ�<br>����2����֮������洢���䶼�ǰ�ҳ����ģ���ʵ����һ��nodeֻ��һ��I/O��</p>
+<h1><span style="color: #ff0000;">MyISAMʵ������</span></h1>
+<h3><strong>1��MyISAMʵ����������</strong></h3>
+<p>��1.&nbsp;MyISAM����ʹ��B+Tree��Ϊ�����ṹ��Ҷ�ڵ��data���ŵ������ݼ�¼�ĵ�ַ��</p>
+<p>��2.&nbsp;MyISAM�������������㷨Ϊ���Ȱ���B+Tree�����㷨����������</p>
+<p>��3.&nbsp;���ָ����Key���ڣ���ȡ����data���ֵ��Ȼ����data���ֵΪ��ַ����ȡ��Ӧ���ݼ�¼��</p>
+<p>��4.&nbsp;MyISAM��������ʽҲ�������Ǿۼ����ģ�֮������ô�ƺ���Ϊ����InnoDB�ľۼ��������֡�</p>
+<h3><strong>2��MyISAM������ԭ��ͼ</strong></h3>
+<p>��1.&nbsp;�������һ�������У�����������Col1Ϊ����������ͼ��һ��MyISAM�����������Primary key��ʾ�⡣</p>
+<p>��2.&nbsp;���Կ���MyISAM�������ļ������������ݼ�¼�ĵ�ַ��</p>
+<p><img src="https://img2018.cnblogs.com/blog/1080958/201902/1080958-20190222160530975-134963843.png" alt="" width="500" height="373"></p>
+<h1><span style="color: #ff0000;">InnoDB����ʵ��</span></h1>
+<p><strong>ע��</strong>��ȻInnoDBҲʹ��B+Tree��Ϊ�����ṹ��������ʵ�ַ�ʽȴ��MyISAM��Ȼ��ͬ��</p>
+<p><strong>1������1��</strong>InnoDB�������ļ�������������ļ�</p>
+<p>��1.&nbsp;������֪����MyISAM�����ļ��������ļ��Ƿ���ģ������ļ����������ݼ�¼�ĵ�ַ��</p>
+<p>��2. ����InnoDB�У��������ļ�������ǰ�B+Tree��֯��һ�������ṹ���������Ҷ�ڵ�data�򱣴������������ݼ�¼��</p>
+<p>��3.&nbsp;���������key�����ݱ�����������InnoDB�������ļ����������������</p>
+<p><em>������������<img src="https://img2018.cnblogs.com/blog/1080958/201902/1080958-20190222161604570-1528582606.png" alt=""></em></p>
+<p>&nbsp;</p>
+<p><strong>˵����</strong></p>
+<p>�����Կ���Ҷ�ڵ���������������ݼ�¼���������������ۼ�������</p>
+<p>����ΪInnoDB�������ļ�����Ҫ�������ۼ�������InnoDBҪ��������������MyISAM����û�У�</p>
+<p>�����û����ʽָ������MySQLϵͳ���Զ�ѡ��һ������Ψһ��ʶ���ݼ�¼������Ϊ����</p>
+<p>����������������У���MySQL�Զ�ΪInnoDB������һ�������ֶ���Ϊ����������ֶγ���Ϊ6���ֽڣ�����Ϊ�����Ρ�</p>
+<p><em><strong>2������2��</strong>InnoDB�ĸ�������data��洢��Ӧ��¼������ֵ�����ǵ�ַ</em></p>
+<p>��1.&nbsp;���仰˵��InnoDB�����и�������������������Ϊdata��</p>
+<p>��2.&nbsp;������Ӣ���ַ���ASCII����Ϊ�Ƚ�׼��</p>
+<p>��3.&nbsp;�ۼ���������ʵ�ַ�ʽʹ�ð�����������ʮ�ָ�Ч�����Ǹ�������������Ҫ������������</p>
+<p>��4.&nbsp;���ȼ��������������������Ȼ�����������������м�����ü�¼��</p>
+<p><strong>3��Ϊʲô������ʹ�ù������ֶ���Ϊ����</strong></p>
+<p>��1.&nbsp;����֪����InnoDB������ʵ�ֺ󣬾ͺ���������Ϊʲô������ʹ�ù������ֶ���Ϊ����</p>
+<p>��2.&nbsp;��Ϊ���и��������������������������������������������ù���</p>
+<p>��3. �����磬�÷ǵ������ֶ���Ϊ������InnoDB�в��Ǹ������⣬��ΪInnoDB�����ļ�������һ��B+Tree��</p>
+<p><em id="__mceDel">��4.&nbsp;�ǵ���������������ڲ����¼�¼ʱ�����ļ�Ϊ��ά��B+Tree�����Զ�Ƶ���ķ��ѵ�����ʮ�ֵ�Ч����ʹ�������ֶ���Ϊ��������һ���ܺõ�ѡ��</em></p>
+<h1 id="i5"><span style="color: #ff0000;">����ʹ�ò���</span><a href="https://www.cnblogs.com/xiaonq/p/10416496.html#i0"><br></a></h1>
+<h3><strong>1����������������������</strong></h3>
+<p>��1.&nbsp;����������ʵ�ܼ򵥣������һ������ֻ��һ���ֶΣ�������������Ϊ����ֶδ���һ������</p>
+<p><em id="__mceDel">��</em>2.&nbsp;����ԭ��Ҳ�ܼ򵥣����磬�����ڣ�a,b,c���ֶ��ϴ���һ��������������������¼�����Ȱ���A�ֶ�����Ȼ���ٰ���B�ֶ�����Ȼ������C�ֶ�</p>
+<p>��3.&nbsp;��ʵ���������Ĳ��Ҿ͸����ֵ���һ���ģ��ȸ��ݵ�һ����ĸ�飬Ȼ���ٸ��ݵڶ�����ĸ��</p>
+<p>��4.&nbsp;����ֻ���ݵ�һ����ĸ�飬���ǲ���������һ����ĸ�ӵڶ�����ĸ��ʼ�顣�������ν������ǰ׺ԭ��</p>
+<p><strong>��5. �����������ص���ǣ�</strong></p>
+<p>����1����һ���ֶ�һ���������<br>����2������һ���ֶ�ֵ��ȵ�ʱ�򣬵ڶ����ֶ���������ģ������±��е�A=2ʱ����B��ֵ���������еģ��������ƣ���ͬһ��Bֵ������C�ֶ����������е�<br>��������������������<img src="https://img2018.cnblogs.com/blog/1080958/201902/1080958-20190222164635003-1467691173.png" alt=""></p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="���ƴ���"><img src="//common.cnblogs.com/images/copycode.gif" alt="���ƴ���"></a></span></div><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a onclick="copyCnblogsCode(this)" title="���ƴ���"><img src="//common.cnblogs.com/images/copycode.gif" alt="���ƴ���"></a></span></div>
+<pre><span style="color: #800000;">'''</span><span style="color: #800000;">����ǰ׺ԭ��</span><span style="color: #800000;">'''</span>
+
+<span style="color: #008000;">#</span><span style="color: #008000;">### 1�����µĲ�ѯ��ʽ�������õ�����</span>
+<span style="color: #800000;">'''</span><span style="color: #800000;">
+select * from table where a=1��
+select * from table where a=1 and b=2��
+select * from table where a=1 and b=2 and c=3��
+����������ѯ���� ��a ��, ��a��b ��,��a��b��c ����˳�򶼿������õ����������������ǰ׺ƥ�䡣
+</span><span style="color: #800000;">'''</span>
+
+<span style="color: #008000;">#</span><span style="color: #008000;">### 2�������ѯ����ǣ�</span>
+<span style="color: #800000;">'''</span><span style="color: #800000;">
+select * from table where a=1 and c=3�� ��ôֻ���õ�����a��
+</span><span style="color: #800000;">'''</span>
+
+<span style="color: #008000;">#</span><span style="color: #008000;">### 3�����������õ�����</span>
+<span style="color: #800000;">'''</span><span style="color: #800000;">
+select * from table where b=2 and c=3�� ��Ϊû���õ�����ǰ׺a�����������ѯ���û��������ġ�
+</span><span style="color: #800000;">'''</span><span style="color: #000000;">
+
+����ǰ׺��ѯ����</span></pre>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a onclick="copyCnblogsCode(this)" title="���ƴ���"><img src="//common.cnblogs.com/images/copycode.gif" alt="���ƴ���"></a></span></div><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="���ƴ���"><img src="//common.cnblogs.com/images/copycode.gif" alt="���ƴ���"></a></span></div></div>
+<h3><strong>2��ǰ׺����</strong></h3>
+<p>��1.&nbsp;ǰ׺�����������е�ǰ׺������������Ϊ����key����ǰ׺���Ⱥ���ʱ������������ʹ��ǰ׺������ѡ���Խӽ�ȫ������</p>
+<p>��2.&nbsp;ͬʱ��Ϊ����key��̶������������ļ��Ĵ�С��ά��������</p>
+<p><strong>��3.&nbsp;һ����˵�����������ʹ��ǰ׺������</strong></p>
+<p>����1���ַ�����(varchar,char,text��)����Ҫ����ȫ�ֶ�ƥ�����ǰƥ�䡣Ҳ����=��xxx�� ���� like ��xxx%��<br>����2���ַ���������ܱȽϳ�������ǰ�����ַ��Ϳ�ʼ����ͬ�������磺�ռ���ַ������˵�������</p>
+<p>��4.&nbsp;MySQL ǰ׺��������Ч��С�����ļ��Ĵ�С������������ٶȡ�</p>
+<p><em id="__mceDel">��</em>5.&nbsp;����ǰ׺����Ҳ�����Ļ�����MySQL ������ ORDER BY �� GROUP BY ��ʹ��ǰ׺������Ҳ���ܰ�����������������(Covering Index)��</p>
+<h3><strong>3�������Ż�����</strong></h3>
+<p><strong>��˵����</strong>MySQL���Ż���Ҫ��Ϊ�ṹ�Ż���Scheme optimization���Ͳ�ѯ�Ż���Query optimization����</p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="���ƴ���"><img src="//common.cnblogs.com/images/copycode.gif" alt="���ƴ���"></a></span></div><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a onclick="copyCnblogsCode(this)" title="���ƴ���"><img src="//common.cnblogs.com/images/copycode.gif" alt="���ƴ���"></a></span></div>
+<pre><span style="color: #008000;">#</span><span style="color: #008000;"> 1������ǰ׺ƥ��ԭ�����潲����</span><span style="color: #008000;">
+#</span><span style="color: #008000;"> 2���������һ��Ҫ������</span><span style="color: #008000;">
+#</span><span style="color: #008000;"> 3���� where,on,group by,order by �г��ֵ���ʹ������</span><span style="color: #008000;">
+#</span><span style="color: #008000;"> 4������ѡ�����ֶȸߵ�����Ϊ����,���ֶȵĹ�ʽ��count(distinct col)/count(*)����ʾ�ֶβ��ظ��ı�����</span><span style="color: #008000;">
+#</span><span style="color: #008000;"> 5��Ϊ�ϳ����ַ���ʹ��ǰ׺����</span>
+
+<span style="color: #800000;">'''</span><span style="color: #800000;">
+# 6����Ҫ���ഴ������, Ȩ������������DML֮���ϵ��DMLҲ���ǲ��롢ɾ�����ݲ�����
+    ������ҪȨ��һ�����⣬����������Ŀ����Ϊ����߲�ѯЧ�ʵģ����������������࣬
+    ��Ӱ����롢ɾ�����ݵ��ٶȣ���Ϊ�����޸ĵı����ݣ�����Ҳ��Ҫ���е����ؽ�
+</span><span style="color: #800000;">'''</span>
+
+<span style="color: #800000;">'''</span><span style="color: #800000;">
+# 7������like��ѯ����%����Ҫ����ǰ�档
+    SELECT * FROMhoudunwangWHEREunameLIKE'���%' -- ������ 
+    SELECT * FROMhoudunwangWHEREunameLIKE "%���%" -- ��������
+</span><span style="color: #800000;">'''</span>
+
+<span style="color: #800000;">'''</span><span style="color: #800000;">
+# 8����ѯwhere�����������Ͳ�ƥ��Ҳ�޷�ʹ������ 
+    �ַ��������ֱȽϲ�ʹ������; 
+    CREATE TABLEa(achar(10)); 
+    EXPLAIN SELECT * FROMaWHEREa="1" �C ������ 
+    EXPLAIN SELECT * FROM a WHERE a=1 �C �������� 
+    ������ʽ��ʹ������,��Ӧ�úܺ����,����Ϊʲô��SQL�к��ѿ���regexp�ؼ��ֵ�ԭ��
+</span><span style="color: #800000;">'''</span></pre>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a onclick="copyCnblogsCode(this)" title="���ƴ���"><img src="//common.cnblogs.com/images/copycode.gif" alt="���ƴ���"></a></span></div><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="���ƴ���"><img src="//common.cnblogs.com/images/copycode.gif" alt="���ƴ���"></a></span></div></div>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="���ƴ���"><img src="//common.cnblogs.com/images/copycode.gif" alt="���ƴ���"></a></span></div><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a onclick="copyCnblogsCode(this)" title="���ƴ���"><img src="//common.cnblogs.com/images/copycode.gif" alt="���ƴ���"></a></span></div>
+<pre><span style="color: #000000;">������ԭ��
+
+</span>1.����ǰ׺ƥ��ԭ�򣬷ǳ���Ҫ��ԭ��mysql��һֱ����ƥ��ֱ��������Χ��ѯ(&gt;��&lt;<span style="color: #000000;">��between��like)��ֹͣƥ�䣬
+����a </span>= 1 <span style="color: #0000ff;">and</span> b = 2 <span style="color: #0000ff;">and</span> c &gt; 3 <span style="color: #0000ff;">and</span> d = 4<span style="color: #000000;"> �������(a,b,c,d)˳���������d���ò��������ģ�
+�������(a,b,d,c)�������򶼿����õ���a,b,d��˳��������������
+
+</span>2.=��in�������򣬱���a = 1 <span style="color: #0000ff;">and</span> b = 2 <span style="color: #0000ff;">and</span> c = 3<span style="color: #000000;"> ����(a,b,c)������������˳��
+mysql�Ĳ�ѯ�Ż���������Ż�����������ʶ�����ʽ
+
+</span>3.����ѡ�����ֶȸߵ�����Ϊ����,���ֶȵĹ�ʽ��count(distinct col)/count(*<span style="color: #000000;">)����ʾ�ֶβ��ظ��ı�����
+����Խ������ɨ��ļ�¼��Խ�٣�Ψһ�������ֶ���1����һЩ״̬���Ա��ֶο����ڴ�������ǰ���ֶȾ���0��
+�ǿ������˻��ʣ����������ʲô����ֵ��ʹ�ó�����ͬ�����ֵҲ����ȷ����
+һ����Ҫjoin���ֶ����Ƕ�Ҫ����0.1���ϣ���ƽ��1��ɨ��10����¼
+
+</span>4.�����в��ܲ�����㣬�����С��ɾ���������from_unixtime(create_time) = ��2014-05-29<span style="color: #000000;">���Ͳ���ʹ�õ�������
+ԭ��ܼ򵥣�b</span>+<span style="color: #000000;">���д�Ķ������ݱ��е��ֶ�ֵ�������м���ʱ����Ҫ������Ԫ�ض�Ӧ�ú������ܱȽϣ�
+��Ȼ�ɱ�̫���������Ӧ��д��create_time </span>= unix_timestamp(��2014-05-29<span style="color: #000000;">��);
+
+</span>5<span style="color: #000000;">.��������չ��������Ҫ�½���������������Ѿ���a������������Ҫ��(a,b)����������ôֻ��Ҫ�޸�ԭ������������
+
+������ԭ��</span></pre>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a onclick="copyCnblogsCode(this)" title="���ƴ���"><img src="//common.cnblogs.com/images/copycode.gif" alt="���ƴ���"></a></span></div><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="���ƴ���"><img src="//common.cnblogs.com/images/copycode.gif" alt="���ƴ���"></a></span></div></div>
+<p>&nbsp;</p>
+<p><img src="1��MyISAMʵ������%20����%20%20������������1.%20MyISAM����ʹ��B+Tree��Ϊ�����ṹ��Ҷ�ڵ��data���ŵ������ݼ�¼�ĵ�ַ��%20%20������������2.%20MyISAM�������������㷨Ϊ���Ȱ���B+Tree�����㷨����������%20%20������������3.%20���ָ����Key���ڣ���ȡ����data���ֵ��Ȼ����data���ֵΪ��ַ����ȡ��Ӧ���ݼ�¼��%20%20������������4.%20MyISAM��������ʽҲ�������Ǿۼ����ģ�֮������ô�ƺ���Ϊ����InnoDB�ľۼ��������֡�%20%20����2��MyISAM������ԭ��ͼ%20%20������������1.%20�������һ�������У�����������Col1Ϊ����������ͼ��һ��MyISAM�����������Primary%20key��ʾ�⡣%20%20������������2.%20���Կ���MyISAM�������ļ������������ݼ�¼�ĵ�ַ��" alt=""></p>
+</div>
+<div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block"><div id="BlogPostCategory">
+    ����: 
+            <a href="https://www.cnblogs.com/lonelyxmas/category/451505.html" target="_blank">SQL-MySql</a></div>
+
+
+    <div id="blog_post_info">
+<div id="green_channel">
+        <a href="javascript:void(0);" id="green_channel_digg" onclick="DiggIt(12549423,cb_blogId,1);green_channel_success(this,'лл�Ƽ���');">����Ҫ��</a>
+        <a id="green_channel_follow" onclick="follow('cdfd460b-63cf-dd11-9e4d-001cf0cd104b');" href="javascript:void(0);">��ע��</a>
+    <a id="green_channel_favorite" onclick="AddToWz(cb_entryId);return false;" href="javascript:void(0);">�ղظ���</a>
+    <a id="green_channel_weibo" href="javascript:void(0);" title="����������΢��" onclick="ShareToTsina()"><img src="https://common.cnblogs.com/images/icon_weibo_24.png" alt=""></a>
+    <a id="green_channel_wechat" href="javascript:void(0);" title="������΢��" onclick="shareOnWechat()"><img src="https://common.cnblogs.com/images/wechat.png" alt=""></a>
+</div>
+<div id="author_profile">
+    <div id="author_profile_info" class="author_profile_info">
+            <a href="https://home.cnblogs.com/u/lonelyxmas/" target="_blank"><img src="https://pic.cnblogs.com/face/43272/20190117144555.png" class="author_avatar" alt=""></a>
+        <div id="author_profile_detail" class="author_profile_info">
+            <a href="https://home.cnblogs.com/u/lonelyxmas/">DotNet֮·</a><br>
+            <a href="https://home.cnblogs.com/u/lonelyxmas/followees/">��ע - 8</a><br>
+            <a href="https://home.cnblogs.com/u/lonelyxmas/followers/">��˿ - 1719</a>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div id="author_profile_honor"></div>
+    <div id="author_profile_follow">
+                <a href="javascript:void(0);" onclick="follow('cdfd460b-63cf-dd11-9e4d-001cf0cd104b');return false;">+�ӹ�ע</a>
+    </div>
+</div>
+<div id="div_digg">
+    <div class="diggit" onclick="votePost(12549423,'Digg')">
+        <span class="diggnum" id="digg_count">0</span>
+    </div>
+    <div class="buryit" onclick="votePost(12549423,'Bury')">
+        <span class="burynum" id="bury_count">0</span>
+    </div>
+    <div class="clear"></div>
+    <div class="diggword" id="digg_tips">
+    </div>
+</div>
+
+<script type="text/javascript">
+    currentDiggType = 0;
+</script></div>
+    <div class="clear"></div>
+    <div id="post_next_prev">
+
+    <a href="https://www.cnblogs.com/lonelyxmas/p/12549421.html" class="p_n_p_prefix">? </a> ��һƪ��    <a href="https://www.cnblogs.com/lonelyxmas/p/12549421.html" title="������ 2020-03-22 23:36">mysql�����Ż�</a>
+    <br>
+    <a href="https://www.cnblogs.com/lonelyxmas/p/12549431.html" class="p_n_p_prefix">? </a> 
+
+</div>
+</div>
+        </div>
+	
+        <div class="postfoot">
+            posted on 
+<a href="https://www.cnblogs.com/lonelyxmas/">DotNet֮·</a>&nbsp;
+�Ķ�(<span id="post_view_count">6</span>)&nbsp;
+����(<span id="post_comment_count">0</span>)&nbsp;
+<a href="https://i.cnblogs.com/EditPosts.aspx?postid=12549423" rel="nofollow">�༭</a>&nbsp;
+<a href="javascript:void(0)" onclick="AddToWz(12549423);return false;">�ղ�</a>
+        </div>
+    </div>
+</div>
+</body>

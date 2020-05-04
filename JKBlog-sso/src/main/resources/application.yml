@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: sso
+  mvc:
+    static-path-pattern: /**
+    resources:
+      static-locations: classpath:/static/
+server:
+  port: 8022

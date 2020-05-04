@@ -1,0 +1,15 @@
+server:
+  port: 8082
+
+# 启动时需要配置数据源，springboot启动时自动配置？ 需要在该文件中配置mybatis,maven项目依赖问题？
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/jkblog?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true
+    username: root
+    password: 125800
+
+mybatis:
+  mapper-locations: classpath*:/mybatis/mappers/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
